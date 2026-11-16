@@ -15,25 +15,27 @@
 <link rel="preload" as="font" type="font/woff2" href="fonts/bc700-pl.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="fonts/b400-pl.woff2" crossorigin>
 <style>
-@font-face{font-family:Barlow;font-weight:400;font-display:optional;src:url(fonts/b400-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
-@font-face{font-family:Barlow;font-weight:400;font-display:optional;src:url(fonts/b400-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
-@font-face{font-family:Barlow;font-weight:600;font-display:optional;src:url(fonts/b600-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
-@font-face{font-family:Barlow;font-weight:600;font-display:optional;src:url(fonts/b600-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
-@font-face{font-family:"Barlow Condensed";font-weight:700;font-display:optional;src:url(fonts/bc700-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
-@font-face{font-family:"Barlow Condensed";font-weight:700;font-display:optional;src:url(fonts/bc700-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Barlow;font-weight:400;font-display:swap;src:url(fonts/b400-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Barlow;font-weight:400;font-display:swap;src:url(fonts/b400-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Barlow;font-weight:600;font-display:swap;src:url(fonts/b600-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Barlow;font-weight:600;font-display:swap;src:url(fonts/b600-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Barlow Condensed";font-weight:700;font-display:swap;src:url(fonts/bc700-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:"Barlow Condensed";font-weight:700;font-display:swap;src:url(fonts/bc700-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Barlow fb";font-weight:400 600;src:local("Arial"),local("ArialMT");size-adjust:94.8%}
+@font-face{font-family:"Barlow Condensed fb";font-weight:700;src:local("Arial Bold"),local("Arial-BoldMT");size-adjust:74.7%}
 :root{--o:#F2600C;--o2:#D94F00;--n:#0E2A47;--nd:#081B30;--t:#13202E;--s:#4A5866;--g:#EDF1F5;--l:#D3DBE3;--hh:70px;--gut:clamp(16px,3.2vw,56px);--w:1320px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
-body{margin:0;font-family:Barlow,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:18px;line-height:1.55;color:var(--t);background:#fff;overflow-x:hidden}
+body{margin:0;font-family:Barlow,"Barlow fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:18px;line-height:1.55;color:var(--t);background:#fff;overflow-x:hidden}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit}
-h1,h2,h3{margin:0;font-family:"Barlow Condensed",Barlow,sans-serif;font-weight:700;line-height:1.02;letter-spacing:-.005em}
+h1,h2,h3{margin:0;font-family:"Barlow Condensed","Barlow Condensed fb",sans-serif;font-weight:700;line-height:1.02;letter-spacing:-.005em}
 h1{font-size:clamp(44px,4vw,76px)}
 h2{font-size:clamp(36px,4vw,62px)}
 h3{font-size:26px;line-height:1.1}
 p{margin:0}
 .wrap{width:min(var(--w),100% - 2*var(--gut));margin-inline:auto}
-.btn{display:inline-flex;align-items:center;gap:14px;background:var(--o);color:#fff;font-family:"Barlow Condensed",Barlow,sans-serif!important;font-weight:700;font-size:22px;letter-spacing:.01em;text-decoration:none;padding:17px 24px 17px 26px;border-radius:14px 14px 2px 2px;line-height:1.2;border:0;cursor:pointer;font-family:inherit;transition:background .2s,transform .2s}
+.btn{display:inline-flex;align-items:center;gap:14px;background:var(--o);color:#fff;font-family:"Barlow Condensed","Barlow Condensed fb",sans-serif!important;font-weight:700;font-size:22px;letter-spacing:.01em;text-decoration:none;padding:17px 24px 17px 26px;border-radius:14px 14px 2px 2px;line-height:1.2;border:0;cursor:pointer;font-family:inherit;transition:background .2s,transform .2s}
 .btn:hover{background:var(--o2)}
 .btn:active{transform:translateY(1px)}
 .btn svg{width:22px;height:22px;flex:none}
@@ -44,7 +46,7 @@ p{margin:0}
 .top .wrap{height:100%;display:flex;align-items:center;gap:28px}
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--n)}
 .logo svg{width:44px;height:30px;flex:none}
-.logo b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:29px;line-height:.9;letter-spacing:.005em}
+.logo b{display:block;font-family:"Barlow Condensed","Barlow Condensed fb",sans-serif;font-size:29px;line-height:.9;letter-spacing:.005em}
 .logo small{display:block;font-size:13px;font-weight:600;color:var(--s);line-height:1.1;margin-top:3px}
 .menu{display:flex;gap:2px;margin-left:auto}
 .menu a{position:relative;text-decoration:none;font-weight:600;font-size:17px;padding:10px 14px;color:var(--t)}
@@ -117,7 +119,7 @@ section{padding:clamp(66px,8vw,124px) 0}
 .dk .lead2{font-size:clamp(19px,1.4vw,21px);color:rgba(255,255,255,.88);margin-top:22px;max-width:31em}
 .dk .kreska{color:var(--o)}
 .cyt{position:relative;padding:clamp(30px,3.4vw,52px) clamp(26px,3vw,48px) clamp(30px,3.4vw,46px);border:2px solid rgba(255,255,255,.28);border-radius:clamp(40px,4vw,64px) clamp(40px,4vw,64px) 2px 2px}
-.cyt q{display:block;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:clamp(34px,3.6vw,56px);line-height:1.05;quotes:"„" "”"}
+.cyt q{display:block;font-family:"Barlow Condensed","Barlow Condensed fb",sans-serif;font-weight:700;font-size:clamp(34px,3.6vw,56px);line-height:1.05;quotes:"„" "”"}
 .cyt p{margin-top:16px;color:rgba(255,255,255,.8);font-size:17px}
 .cyt ul{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:10px}
 .cyt li{padding-left:22px;position:relative;color:rgba(255,255,255,.9);font-size:17px}
@@ -125,7 +127,7 @@ section{padding:clamp(66px,8vw,124px) 0}
 
 /* kontakt */
 .kont{display:grid;grid-template-columns:minmax(300px,.85fr) 1.15fr;gap:clamp(30px,4vw,72px);align-items:start}
-.dane .tl{display:inline-block;font-family:"Barlow Condensed",sans-serif;font-size:clamp(40px,3.8vw,58px);font-weight:700;text-decoration:none;color:var(--n);line-height:1}
+.dane .tl{display:inline-block;font-family:"Barlow Condensed","Barlow Condensed fb",sans-serif;font-size:clamp(40px,3.8vw,58px);font-weight:700;text-decoration:none;color:var(--n);line-height:1}
 .dane .tl:hover{color:var(--o)}
 .dane dl{margin:26px 0 0;display:grid;grid-template-columns:auto 1fr;gap:12px 22px;font-size:17.5px}
 .dane dt{color:var(--s)}
